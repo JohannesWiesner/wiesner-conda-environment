@@ -1,11 +1,82 @@
 name: windows-2025
 channels:
 - conda-forge
+- plotly
+- pyviz
+- ejolly
+- districtdatalabs
+- bokeh
+- anaconda
 - defaults
 dependencies:
+- xmltodict
+- bokeh
+- dash
+- dash-bootstrap-components
+- jupyter-book
+- mne
+- neurokit2
+- sklearn-pandas
+- bctpy
+- datalad
+- distro
+- fastcluster
+- feature_engine
+- mne-connectivity
+- nilearn
+- nipype
+- oct2py
+- openneuro-py
+- openpyxl
+- pingouin
+- polars
+- pybids
+- pydicom
+- pyreadstat
 - python
-- r-essentials
+- python-kaleido
+- scikit-image
+- scikit-learn
+- skglm
+- spyder
+- statannotations
+- tableone
+- yellowbrick
+- pymer4
+- plotly
+- plotly-orca
+- holoviews
+- hvplot
+- r-circlize
+- r-dendextend
+- jupyterlab
 - r-base
+- r-devtools
+- r-essentials
+- r-repr
+- r-reticulate
 - pip
 - pip:
-  - scikit-learn
+  - adjustText
+  - antropy
+  - brainrender
+  - dash-cytoscape
+  - fmriprep-docker
+  - pyvis
+  - semopy
+  - abagen
+  - ancpbids
+  - atlasreader
+  - brainsmash
+  - brainspace
+  - cca-zoo
+  - clustergrammer
+  - gower
+  - network_control
+  - neuromaps
+  - nimare
+  - nisupply
+  - psmpy
+  - pytest
+  - sysrsync
+  - templateflow
