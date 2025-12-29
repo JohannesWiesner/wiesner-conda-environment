@@ -1,0 +1,5 @@
+package_name	version	package_manager	conda_channel	include	language	bug_flag
+python		conda	conda-forge	true	python	
+r-essentials		conda	conda-forge	true	r	
+r-base		conda	conda-forge	true	r	
+scikit-learn		pip		true	python	
