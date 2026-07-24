@@ -55,7 +55,7 @@ skglm		conda	conda-forge	true	python		statistical modelling	https://contrib.scik
 spyder		conda	conda-forge	true	python		ide	https://www.spyder-ide.org/	scientific python IDE	
 statannotations		conda	conda-forge	true	python		plotting	https://github.com/trevismd/statannotations	A library that allows you to plot figures using seaborn and also computing significance tests and adding asterisks	Note, that the original package statannot is not maintained anymore, this is why we use statannotations which is a maintained branch
 tableone		conda	conda-forge	true	python		data wrangling	https://github.com/tompollard/tableone	Package for plotting descriptive statistics	
-xmltodict		conda	Conda-forge	true	python		data wrangling	https://github.com/martinblech/xmltodict	Needed for CAT12 xml output files	
+xmltodict		conda	conda-forge	true	python		data wrangling	https://github.com/martinblech/xmltodict	Needed for CAT12 xml output files	
 abagen		pip		true	python		statistical modelling	https://abagen.readthedocs.io/en/stable/installation.html	abagen lets you get information about gene receptor densities using the Allen Human Brain Atlas and a custom atlas of your choice	
 ancpbids		pip		true	python		neuroimaging	https://ancpbids.readthedocs.io/en/latest/installation.html	ancpBIDS is a faster alternative to pybids (especially when you want to read in large datasets on a network drive)	
 atlasreader		pip		true	python		plotting	https://github.com/miykael/atlasreader	Provides a Python interface for generating coordinate tables and region labels from statistical MRI images	
