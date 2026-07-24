@@ -1,15 +1,13 @@
 name: ubuntu-22.04
 channels:
 - conda-forge
-- plotly
 - pyviz
+- plotly
 - ejolly
 - districtdatalabs
 - bokeh
-- anaconda
 - defaults
 dependencies:
-- xmltodict
 - bokeh
 - dash
 - dash-bootstrap-components
@@ -41,6 +39,9 @@ dependencies:
 - spyder
 - statannotations
 - tableone
+- xmltodict
+- pytorch
+- transformers
 - yellowbrick
 - pymer4
 - plotly
