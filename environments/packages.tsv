@@ -1,4 +1,5 @@
 package_name	version	package_manager	conda_channel	include	language	bug_flag	area	link	description	comment
+bokeh		conda	bokeh	false	python		dependency	https://docs.bokeh.org/en/latest/	Optional addon  for holoviews to create interactive plots	
 dash		conda	conda-forge	false	python		plotting	https://dash.plotly.com/introduction	Used for nct_tutorial from Johannes	
 dash-bootstrap-components		conda	conda-forge	false	python		plotting	https://dash-bootstrap-components.opensource.faculty.ai/docs/quickstart/	Used for nct_tutorial from Johannes	Allows to create dash-apps using a grid-layout (e.g. rows and columns)
 jupyter-book		conda	conda-forge	false	python		ide	https://jupyterbook.org/en/stable/intro.html	Used for creating workshop webpages. Not needed for any data analysis	
@@ -8,6 +9,9 @@ r-circlize		conda	conda-forge	false	r		plotting	https://r-charts.com/part-whole/
 r-dendextend		conda	conda-forge	false	r		plotting	https://r-charts.com/part-whole/circular-dendrogram/	Allows to customize dendrograms (e.g. coloring branches, adding labels)	Should be installed together with circlize
 sklearn-pandas		conda	conda-forge	false	python		data wrangling	https://github.com/scikit-learn-contrib/sklearn-pandas	Allows you to apply scikit-learn transfomers directly on pandas dataframes	Not necessary anymore because scikit-learn has now built-in functionality for this
 yellowbrick		conda	districtdatalabs	false	python		plotting	https://www.scikit-yb.org/en/latest/index.html	Builds upon seaborn and has some advanced plotting classes such as Radviz (https://www.scikit-yb.org/en/latest/api/features/radviz.html)	
+plotly-orca		conda	plotly	false	python		dependency	https://plotly.com/python/orca-management/	Optional addon  for plotly to export static images	Plotly people now recommend to use kaleido instead (https://plotly.com/python/static-image-export/). So this should be changed to kaleido
+holoviews		conda	pyviz	false	python		plotting	https://holoviews.org/index.html	wrapper around common python plotting libraries (note that installation command will also install bokeh and pyviz, which is the recommended way from holoviews)	niplot module needs this. But I don’t use this any longer.
+hvplot		conda	pyviz	false	python		plotting	https://hvplot.holoviz.org/index.html	hvplot allows to use all the pandas plotting functions (e.g. df.hist()) but outputs interactive instead of static figures	Not using this atm. You can also use plotly backend in pandas 
 lme4		cran		false	r		statistical modelling	https://cran.r-project.org/web/packages/lme4/lme4.pdf	Fitting mixed models in R. Not needed to install this directly if you install pymer4 (as this pulls lm4 automatically)	Note, that when installing pymer4, you will automatically get lme4 installed, so this installation would become obsolete. You might also need to install stamod (https://community.rstudio.com/t/error-message-when-trying-to-install-lmer-package-and-load-lmer-library/85418)
 adjustText		pip		false	python		plotting	https://github.com/JohannesWiesner/pycat/blob/master/pycat.py	adjust text in matplotlib figures	
 antropy		pip		false	python		statistical modelling	https://github.com/raphaelvallat/antropy	AntroPy is a Python 3 package providing several time-efficient algorithms for computing the complexity of time-series.	
@@ -18,10 +22,6 @@ groupyr		pip		false	python	cross-platform	statistical modelling	https://richieha
 pyvis		pip		false	python		plotting	https://pyvis.readthedocs.io/en/latest/index.html	Visualizing graphs/networks in an interactive fashion	This will automatically install networkx as a dependency
 resample		pip		false	python	cross-platform	statistical modelling	https://github.com/scikit-hep/resample	Allows you to do permutation and bootstrapping resampling	This requires a C-compiler to be installed on your machine. On CIMH machines this can be tedious to install
 semopy		pip		false	python		statistical modelling	https://semopy.com/	Used for structural equation modelling in python	Bug: scikit-learn has now to be installed as scikit-learn, not sklearn (https://gitlab.com/georgy.m/semopy/-/issues/35), once issue is solved we can re-include semopy again
-bokeh		conda	bokeh	false	python		dependency	https://docs.bokeh.org/en/latest/	Optional addon  for holoviews to create interactive plots	
-holoviews		conda	pyviz	false	python		plotting	https://holoviews.org/index.html	wrapper around common python plotting libraries (note that installation command will also install bokeh and pyviz, which is the recommended way from holoviews)	niplot module needs this. But I don’t use this any longer.
-hvplot		conda	pyviz	false	python		plotting	https://hvplot.holoviz.org/index.html	hvplot allows to use all the pandas plotting functions (e.g. df.hist()) but outputs interactive instead of static figures	Not using this atm. You can also use plotly backend in pandas 
-plotly-orca		conda	plotly	false	python		dependency	https://plotly.com/python/orca-management/	Optional addon  for plotly to export static images	Plotly people now recommend to use kaleido instead (https://plotly.com/python/static-image-export/). So this should be changed to kaleido
 bctpy		conda	conda-forge	true	python		statistical modelling	https://github.com/aestrivex/bctpy	A library that allows you to compute all sorts of topological measures on connectivity matrices	
 datalad		conda	conda-forge	true	python		data wrangling	https://www.datalad.org/	Allows you to download and manage datalad datasets	https://www.datalad.org/
 distro		conda	conda-forge	true	python		system	https://pypi.org/project/distro/	distro provides information about the OS distribution it runs on, such as a reliable machine-readable ID, or version information.	This package is useful to detect on which specific distro your current python script is running. For example you might want to run the script both on your personal machine and on the server. In this case paths might change and you want to have an option to automatically change paths by detecting the OS
@@ -36,12 +36,10 @@ oct2py		conda	conda-forge	true	python		system	https://pypi.org/project/oct2py/	O
 openneuro-py		conda	conda-forge	true	python		data wrangling	https://github.com/hoechenberger/openneuro-py	Allows you to download open neuro datasets via python	
 openpyxl		conda	conda-forge	true	python		io	https://openpyxl.readthedocs.io/en/stable/	A Python library to read/write Excel 2010 xlsx/xlsm files	
 pingouin		conda	conda-forge	true	python		statistical modelling	https://pingouin-stats.org/index.html#	Implements commong statistical tests (ANOVA, t-test, etc.)	
-plotly		conda	plotly	true	python		plotting	https://plotly.com/python/	Plotting library similar to seaborn but allows for interactive plots	We also install plotly-orca, so we are able to plot static images (.jpg,.png, etc.)
 python-kaleido		conda	conda-forge	true	python		dependency	https://github.com/plotly/Kaleido	Needed so that plotly can export plots as static files (png, svg, etc)	
 polars		conda	conda-forge	true	python		data wrangling	https://docs.pola.rs/	Alternative for pandas that is much faster in reading in large .csv files	
 pybids		conda	conda-forge	true	python		data wrangling	https://bids-standard.github.io/pybids/	Pybids helps to query BIDS-datasets	
 pydicom		conda	conda-forge	true	python		data wrangling	https://github.com/pydicom/pydicom	Allows you to read in DICOM files	
-pymer4		conda	ejolly	true	python		statistical modelling	https://eshinjolly.com/pymer4/index.html	A library that allows you to compute mixed models (with the lme4 R package) using python (and the ryp2 package)	pymer4 depends on R (and lme4) and on rpy2 so this will automatically be installed in the environment (see: https://eshinjolly.com/pymer4/installation.html)
 pyreadstat		conda	conda-forge	true	python		data wrangling	https://github.com/Roche/pyreadstat	Allows you to read in SPSS data files	
 python		conda	conda-forge	true	python		language	https://anaconda.org/conda-forge/python	the python programming language itself	
 r-base		conda	conda-forge	true	r		language	https://anaconda.org/conda-forge/r-base	the R programming language itself	
@@ -56,6 +54,13 @@ spyder		conda	conda-forge	true	python		ide	https://www.spyder-ide.org/	scientifi
 statannotations		conda	conda-forge	true	python		plotting	https://github.com/trevismd/statannotations	A library that allows you to plot figures using seaborn and also computing significance tests and adding asterisks	Note, that the original package statannot is not maintained anymore, this is why we use statannotations which is a maintained branch
 tableone		conda	conda-forge	true	python		data wrangling	https://github.com/tompollard/tableone	Package for plotting descriptive statistics	
 xmltodict		conda	conda-forge	true	python		data wrangling	https://github.com/martinblech/xmltodict	Needed for CAT12 xml output files	
+pytorch		conda	conda-forge	true	python		statistical modelling	https://anaconda.org/channels/conda-forge/packages/pytorch/overview	Deepl-learning library	
+transformers		conda	conda-forge	true	python		statistical modelling	https://huggingface.co/	Let’s you use local llm models	
+pymer4		conda	ejolly	true	python		statistical modelling	https://eshinjolly.com/pymer4/index.html	A library that allows you to compute mixed models (with the lme4 R package) using python (and the ryp2 package)	pymer4 depends on R (and lme4) and on rpy2 so this will automatically be installed in the environment (see: https://eshinjolly.com/pymer4/installation.html)
+plotly		conda	plotly	true	python		plotting	https://plotly.com/python/	Plotting library similar to seaborn but allows for interactive plots	We also install plotly-orca, so we are able to plot static images (.jpg,.png, etc.)
+pytest		conda	conda-forge	true	python		development	https://docs.pytest.org/en/7.1.x/index.html	write tests in python	
+sysrsync		conda	conda-forge	true	python		io	https://github.com/gchamon/sysrsync	use rsync via python	
+templateflow		conda	conda-forge	true	python		neuroimaging	https://www.templateflow.org/	download atlases and templates for your neuroimaging analysis	
 abagen		pip		true	python		statistical modelling	https://abagen.readthedocs.io/en/stable/installation.html	abagen lets you get information about gene receptor densities using the Allen Human Brain Atlas and a custom atlas of your choice	
 ancpbids		pip		true	python		neuroimaging	https://ancpbids.readthedocs.io/en/latest/installation.html	ancpBIDS is a faster alternative to pybids (especially when you want to read in large datasets on a network drive)	
 atlasreader		pip		true	python		plotting	https://github.com/miykael/atlasreader	Provides a Python interface for generating coordinate tables and region labels from statistical MRI images	
@@ -69,8 +74,3 @@ neuromaps		pip		true	python		neuroimaging	https://netneurolab.github.io/neuromap
 nimare		pip		true	python		statistical modelling	https://nimare.readthedocs.io/en/stable/	Used to derive statistical images from neurosynth.org	
 nisupply		pip		true	python		data wrangling	https://github.com/JohannesWiesner/nisupply	Johannes Wiesner’s repository to deal with unstructured neuroimaging datasets	
 psmpy		pip		true	python		statistical modelling	https://pypi.org/project/psmpy/#description	Propensity Score matching in python	
-pytest		pip		true	python		development	https://docs.pytest.org/en/7.1.x/index.html	write tests in python	
-sysrsync		pip		true	python		io	https://github.com/gchamon/sysrsync	use rsync via python	
-templateflow		pip		true	python		neuroimaging	https://www.templateflow.org/	download atlases and templates for your neuroimaging analysis	
-pytorch		conda	conda-forge	true	python		statistical modelling	https://anaconda.org/channels/conda-forge/packages/pytorch/overview	Deepl-learning library	
-transformers		conda	conda-forge	true	python		statistical modelling	https://huggingface.co/	Let’s you use local llm models	
