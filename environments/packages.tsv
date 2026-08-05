@@ -74,3 +74,4 @@ neuromaps		pip		true	python		neuroimaging	https://netneurolab.github.io/neuromap
 nimare		pip		true	python		statistical modelling	https://nimare.readthedocs.io/en/stable/	Used to derive statistical images from neurosynth.org	
 nisupply		pip		true	python		data wrangling	https://github.com/JohannesWiesner/nisupply	Johannes Wiesner’s repository to deal with unstructured neuroimaging datasets	
 psmpy		pip		true	python		statistical modelling	https://pypi.org/project/psmpy/#description	Propensity Score matching in python	
+odfpy		conda	conda-forge	true	python		dependency	https://github.com/eea/odfpy	Dependency for pandas to be able to read in .ods files	
