@@ -45,6 +45,7 @@ dependencies:
 - pytest
 - sysrsync
 - templateflow
+- odfpy
 - yellowbrick
 - pymer4
 - plotly-orca

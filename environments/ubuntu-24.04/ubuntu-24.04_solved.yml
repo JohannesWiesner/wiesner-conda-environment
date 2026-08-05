@@ -452,6 +452,7 @@ dependencies:
   - ocl-icd=2.3.4=hb03c661_1
   - oct2py=6.0.3=pyhc364b38_0
   - octave_kernel=1.1.0=pyhd8ed1ab_0
+  - odfpy=1.4.1=pyhd8ed1ab_1
   - onednn=3.12=omp_h83de36e_0
   - onemkl-license=2026.1.0=ha770c72_243
   - opencl-headers=2025.06.13=hecca717_0
@@ -794,7 +795,7 @@ dependencies:
   - r-sparsevctrs=0.3.6=r45h54b55ab_0
   - r-spatial=7.3_18=r45h54b55ab_1
   - r-squarem=2026.1=r45hc72bb7e_0
-  - r-stringi=1.8.7=r45h3d52c89_2
+  - r-stringi=1.8.9=r45h3d52c89_0
   - r-stringr=1.6.0=r45h785f33e_0
   - r-survival=3.8_9=r45h54b55ab_0
   - r-sys=3.4.3=r45h54b55ab_1

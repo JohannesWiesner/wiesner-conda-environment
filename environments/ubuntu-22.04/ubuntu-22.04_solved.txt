@@ -682,6 +682,7 @@ https://conda.anaconda.org/conda-forge/noarch/octave_kernel-1.1.0-pyhd8ed1ab_0.c
 https://conda.anaconda.org/conda-forge/noarch/python-dotenv-1.2.2-pyhcf101f3_0.conda#130584ad9f3a513cdd71b1fdc1244e9c
 https://conda.anaconda.org/conda-forge/noarch/pydantic-settings-2.14.2-pyhcf101f3_0.conda#a1c5305893d9956abd2079d377c5113f
 https://conda.anaconda.org/conda-forge/noarch/oct2py-6.0.3-pyhc364b38_0.conda#f2fc8805a31f6e62f7da989a60f5e15e
+https://conda.anaconda.org/conda-forge/noarch/odfpy-1.4.1-pyhd8ed1ab_1.conda#0af156e0f72b30a3f5b6d3efd83e28d9
 https://conda.anaconda.org/conda-forge/noarch/wcmatch-11.0-pyhcf101f3_0.conda#c44743c4f4eb35b3078623bdff134af2
 https://conda.anaconda.org/conda-forge/noarch/openneuro-py-2026.7.1-pyhd8ed1ab_0.conda#d498abcbf9e25d28d583ceb0b22d53f1
 https://conda.anaconda.org/conda-forge/linux-64/openpyxl-3.1.5-py314hf3b76af_3.conda#bc90b1901f01e0772c74e24b6f931137
@@ -808,7 +809,7 @@ https://conda.anaconda.org/conda-forge/linux-64/r-tibble-3.3.1-r45h54b55ab_0.con
 https://conda.anaconda.org/conda-forge/noarch/r-tidyselect-1.2.1-r45hc72bb7e_2.conda#15aa0f323385403fe182e46a1d095e1b
 https://conda.anaconda.org/conda-forge/linux-64/r-dplyr-1.2.1-r45h3697838_0.conda#7c8e643f764769a184f0d0d06ac0e789
 https://conda.anaconda.org/conda-forge/linux-64/r-purrr-1.2.2-r45h54b55ab_0.conda#dc14c484a0415f43dc1b90b518beb41a
-https://conda.anaconda.org/conda-forge/linux-64/r-stringi-1.8.7-r45h3d52c89_2.conda#c7ce6f26b92398224c78b92c653b94c1
+https://conda.anaconda.org/conda-forge/linux-64/r-stringi-1.8.9-r45h3d52c89_0.conda#8b4ab64c1ea52b50aded3186643a9f9f
 https://conda.anaconda.org/conda-forge/noarch/r-stringr-1.6.0-r45h785f33e_0.conda#8db438d8aa370726ee1ce8bf458f2e6d
 https://conda.anaconda.org/conda-forge/linux-64/r-tidyr-1.3.2-r45h3697838_0.conda#e571d4d42233dd2aa3bdb0057ffbdc63
 https://conda.anaconda.org/conda-forge/noarch/r-broom-1.0.13-r45hc72bb7e_0.conda#6e42ae7987bd0ebf2384de34df4784ca
