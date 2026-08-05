@@ -3,7 +3,7 @@ adjustText==1.4.0
 ancpbids==0.3.1
 antropy==0.2.2
 atlasreader==0.3.2
-blosc2==4.9.1
+blosc2==4.10.0
 brainglobe-atlasapi==2.3.1
 brainglobe-utils==0.11.2
 brainglobe_space==1.0.3
@@ -11,9 +11,9 @@ brainrender==2.2.0
 brainsmash==0.11.0
 brainspace==0.2.1
 bs4==0.0.2
-cca-zoo==3.0.0
-cloud-files==6.4.0
-cloud_volume==12.14.2
+cca-zoo==3.1.1
+cloud-files==6.4.1
+cloud_volume==12.14.4
 clustergrammer==1.13.6
 cognitiveatlas==0.1.11
 compressed_segmentation==2.3.3
@@ -38,7 +38,6 @@ google-crc32c==1.8.0
 google-resumable-media==2.10.0
 googleapis-common-protos==1.75.0
 gower==0.1.2
-iniconfig==2.3.0
 jsonpickle==4.1.2
 k3d==2.17.0
 lazy_imports==1.2.0
@@ -86,7 +85,6 @@ PyQt5_sip==12.17.0
 PyQtWebEngine==5.15.7
 PySide6==6.11.1
 pysimdjson==7.0.2
-pytest==9.1.1
 python-jsonschema-objects==0.5.7
 pyvis==0.3.2
 PyWavelets==1.9.0
@@ -100,10 +98,8 @@ setuptools==81.0.0
 shiboken6==6.11.1
 simplejpeg==1.9.0
 slurmio==0.1.2
-sparse==0.19.0
-sysrsync==1.1.1
+sparse==0.19.1
 tables==3.11.1
-templateflow==25.1.2
 tenacity==9.1.4
 tensorly==0.9.0
 toolz==1.1.0

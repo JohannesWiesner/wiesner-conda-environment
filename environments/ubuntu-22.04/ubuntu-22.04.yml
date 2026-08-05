@@ -27,12 +27,12 @@ dependencies:
 - openneuro-py
 - openpyxl
 - pingouin
+- python-kaleido
 - polars
 - pybids
 - pydicom
 - pyreadstat
 - python
-- python-kaleido
 - scikit-image
 - scikit-learn
 - skglm
@@ -42,10 +42,13 @@ dependencies:
 - xmltodict
 - pytorch
 - transformers
+- pytest
+- sysrsync
+- templateflow
 - yellowbrick
 - pymer4
-- plotly
 - plotly-orca
+- plotly
 - holoviews
 - hvplot
 - r-circlize
@@ -79,6 +82,3 @@ dependencies:
   - nimare
   - nisupply
   - psmpy
-  - pytest
-  - sysrsync
-  - templateflow
