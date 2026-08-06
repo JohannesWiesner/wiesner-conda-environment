@@ -1,20 +1,8 @@
 name: ubuntu-22.04
 channels:
 - conda-forge
-- pyviz
-- plotly
 - ejolly
-- districtdatalabs
-- bokeh
-- defaults
 dependencies:
-- bokeh
-- dash
-- dash-bootstrap-components
-- jupyter-book
-- mne
-- neurokit2
-- sklearn-pandas
 - bctpy
 - datalad
 - distro
@@ -40,20 +28,14 @@ dependencies:
 - statannotations
 - tableone
 - xmltodict
-- pytorch
+- pytorch=*=cuda*
 - transformers
+- plotly
 - pytest
 - sysrsync
 - templateflow
 - odfpy
-- yellowbrick
 - pymer4
-- plotly-orca
-- plotly
-- holoviews
-- hvplot
-- r-circlize
-- r-dendextend
 - jupyterlab
 - lckr_jupyterlab_variableinspector
 - r-base
@@ -63,13 +45,6 @@ dependencies:
 - r-reticulate
 - pip
 - pip:
-  - adjustText
-  - antropy
-  - brainrender
-  - dash-cytoscape
-  - fmriprep-docker
-  - pyvis
-  - semopy
   - abagen
   - ancpbids
   - atlasreader
