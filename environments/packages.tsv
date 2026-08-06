@@ -56,7 +56,7 @@ tableone		conda	conda-forge	true	python		data wrangling	https://github.com/tompo
 xmltodict		conda	conda-forge	true	python		data wrangling	https://github.com/martinblech/xmltodict	Needed for CAT12 xml output files	
 pytorch=*=cuda*		conda	conda-forge	true	python		statistical modelling	https://anaconda.org/channels/conda-forge/packages/pytorch/overview	Deepl-learning library	
 transformers		conda	conda-forge	true	python		statistical modelling	https://huggingface.co/	Let’s you use local llm models	
-pymer4		conda	conda-forge	true	python		statistical modelling	https://eshinjolly.com/pymer4/index.html	A library that allows you to compute mixed models (with the lme4 R package) using python (and the ryp2 package)	pymer4 depends on R (and lme4) and on rpy2 so this will automatically be installed in the environment (see: https://eshinjolly.com/pymer4/installation.html)
+pymer4		conda	ejolly	true	python		statistical modelling	https://eshinjolly.com/pymer4/index.html	A library that allows you to compute mixed models (with the lme4 R package) using python (and the ryp2 package)	pymer4 depends on R (and lme4) and on rpy2 so this will automatically be installed in the environment (see: https://eshinjolly.com/pymer4/installation.html)
 plotly		conda	conda-forge	true	python		plotting	https://plotly.com/python/	Plotting library similar to seaborn but allows for interactive plots	We also install plotly-orca, so we are able to plot static images (.jpg,.png, etc.)
 pytest		conda	conda-forge	true	python		development	https://docs.pytest.org/en/7.1.x/index.html	write tests in python	
 sysrsync		conda	conda-forge	true	python		io	https://github.com/gchamon/sysrsync	use rsync via python	
