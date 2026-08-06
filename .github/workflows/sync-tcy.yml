@@ -1,0 +1,49 @@
+name: Manually sync files from TCY template repository
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync_with_tcy_template:
+    name: Synchronize repository with TCY template
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out wiesner-conda-environment repository
+        uses: actions/checkout@v4
+
+      - name: Clone latest main branch of TCY template repository
+        run: |
+          git clone \
+            --depth 1 \
+            --branch main \
+            https://github.com/JohannesWiesner/tcy.git \
+            "$RUNNER_TEMP/tcy-upstream"
+
+      - name: Mirror TCY template while preserving README, environments, and sync workflow
+        run: |
+          rsync -a --delete \
+            --exclude=".git/" \
+            --exclude="/README.md" \
+            --exclude="/environments/" \
+            --exclude="/.github/workflows/sync-tcy.yml" \
+            "$RUNNER_TEMP/tcy-upstream/" \
+            "./"
+
+      - name: Commit and push changes if TCY template contains updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "Repository is already synchronized with TCY."
+            exit 0
+          fi
+
+          git commit -m "Sync with TCY template"
+          git push
