@@ -56,11 +56,12 @@ tableone		conda	conda-forge	true	python		data wrangling	https://github.com/tompo
 xmltodict		conda	conda-forge	true	python		data wrangling	https://github.com/martinblech/xmltodict	Needed for CAT12 xml output files	
 pytorch=*=cuda*		conda	conda-forge	true	python		statistical modelling	https://anaconda.org/channels/conda-forge/packages/pytorch/overview	Deepl-learning library	
 transformers		conda	conda-forge	true	python		statistical modelling	https://huggingface.co/	Let’s you use local llm models	
-pymer4		conda	ejolly	true	python		statistical modelling	https://eshinjolly.com/pymer4/index.html	A library that allows you to compute mixed models (with the lme4 R package) using python (and the ryp2 package)	pymer4 depends on R (and lme4) and on rpy2 so this will automatically be installed in the environment (see: https://eshinjolly.com/pymer4/installation.html)
-plotly		conda	plotly	true	python		plotting	https://plotly.com/python/	Plotting library similar to seaborn but allows for interactive plots	We also install plotly-orca, so we are able to plot static images (.jpg,.png, etc.)
+pymer4		conda	conda-forge	true	python		statistical modelling	https://eshinjolly.com/pymer4/index.html	A library that allows you to compute mixed models (with the lme4 R package) using python (and the ryp2 package)	pymer4 depends on R (and lme4) and on rpy2 so this will automatically be installed in the environment (see: https://eshinjolly.com/pymer4/installation.html)
+plotly		conda	conda-forge	true	python		plotting	https://plotly.com/python/	Plotting library similar to seaborn but allows for interactive plots	We also install plotly-orca, so we are able to plot static images (.jpg,.png, etc.)
 pytest		conda	conda-forge	true	python		development	https://docs.pytest.org/en/7.1.x/index.html	write tests in python	
 sysrsync		conda	conda-forge	true	python		io	https://github.com/gchamon/sysrsync	use rsync via python	
 templateflow		conda	conda-forge	true	python		neuroimaging	https://www.templateflow.org/	download atlases and templates for your neuroimaging analysis	
+odfpy		conda	conda-forge	true	python		dependency	https://github.com/eea/odfpy	Dependency for pandas to be able to read in .ods files	
 abagen		pip		true	python		statistical modelling	https://abagen.readthedocs.io/en/stable/installation.html	abagen lets you get information about gene receptor densities using the Allen Human Brain Atlas and a custom atlas of your choice	
 ancpbids		pip		true	python		neuroimaging	https://ancpbids.readthedocs.io/en/latest/installation.html	ancpBIDS is a faster alternative to pybids (especially when you want to read in large datasets on a network drive)	
 atlasreader		pip		true	python		plotting	https://github.com/miykael/atlasreader	Provides a Python interface for generating coordinate tables and region labels from statistical MRI images	
@@ -74,4 +75,3 @@ neuromaps		pip		true	python		neuroimaging	https://netneurolab.github.io/neuromap
 nimare		pip		true	python		statistical modelling	https://nimare.readthedocs.io/en/stable/	Used to derive statistical images from neurosynth.org	
 nisupply		pip		true	python		data wrangling	https://github.com/JohannesWiesner/nisupply	Johannes Wiesner’s repository to deal with unstructured neuroimaging datasets	
 psmpy		pip		true	python		statistical modelling	https://pypi.org/project/psmpy/#description	Propensity Score matching in python	
-odfpy		conda	conda-forge	true	python		dependency	https://github.com/eea/odfpy	Dependency for pandas to be able to read in .ods files	
