@@ -28,7 +28,7 @@ dependencies:
 - statannotations
 - tableone
 - xmltodict
-- Pytorch-gpu
+- pytorch-gpu
 - transformers
 - plotly
 - pytest
