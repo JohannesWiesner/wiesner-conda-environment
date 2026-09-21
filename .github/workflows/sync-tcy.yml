@@ -3,9 +3,6 @@ name: Manually sync files from TCY template repository
 on:
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   sync_with_tcy_template:
     name: Synchronize repository with TCY template
@@ -14,6 +11,8 @@ jobs:
     steps:
       - name: Check out wiesner-conda-environment repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.TCY_SYNC_TOKEN }}
 
       - name: Clone latest main branch of TCY template repository
         run: |
