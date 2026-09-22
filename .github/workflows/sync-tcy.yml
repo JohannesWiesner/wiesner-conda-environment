@@ -28,6 +28,7 @@ jobs:
             --exclude=".git/" \
             --exclude="/README.md" \
             --exclude="/environments/" \
+            --exclude="/assets/" \
             --exclude="/.github/workflows/sync-tcy.yml" \
             "$RUNNER_TEMP/tcy-upstream/" \
             "./"
