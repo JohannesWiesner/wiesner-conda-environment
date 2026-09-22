@@ -1,22 +1,8 @@
 name: windows-2025
 channels:
 - conda-forge
-- plotly
-- pyviz
 - ejolly
-- districtdatalabs
-- bokeh
-- anaconda
-- defaults
 dependencies:
-- xmltodict
-- bokeh
-- dash
-- dash-bootstrap-components
-- jupyter-book
-- mne
-- neurokit2
-- sklearn-pandas
 - bctpy
 - datalad
 - distro
@@ -29,27 +15,27 @@ dependencies:
 - openneuro-py
 - openpyxl
 - pingouin
+- python-kaleido
 - polars
 - pybids
 - pydicom
 - pyreadstat
 - python
-- python-kaleido
 - scikit-image
 - scikit-learn
 - skglm
 - spyder
 - statannotations
 - tableone
-- yellowbrick
-- pymer4
+- xmltodict
+- transformers
 - plotly
-- plotly-orca
-- holoviews
-- hvplot
-- r-circlize
-- r-dendextend
-- jupyterlab
+- pytest
+- sysrsync
+- templateflow
+- odfpy
+- spyder-notebook
+- pymer4
 - r-base
 - r-devtools
 - r-essentials
@@ -57,13 +43,6 @@ dependencies:
 - r-reticulate
 - pip
 - pip:
-  - adjustText
-  - antropy
-  - brainrender
-  - dash-cytoscape
-  - fmriprep-docker
-  - pyvis
-  - semopy
   - abagen
   - ancpbids
   - atlasreader
@@ -77,6 +56,3 @@ dependencies:
   - nimare
   - nisupply
   - psmpy
-  - pytest
-  - sysrsync
-  - templateflow
