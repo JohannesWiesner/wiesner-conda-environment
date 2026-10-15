@@ -76,3 +76,5 @@ neuromaps		pip		true	python		neuroimaging	https://netneurolab.github.io/neuromap
 nimare		pip		true	python		statistical modelling	https://nimare.readthedocs.io/en/stable/	used to derive statistical images from neurosynth.org	
 nisupply		pip		true	python		data wrangling	https://github.com/johanneswiesner/nisupply	johannes wiesner’s repository to deal with unstructured neuroimaging datasets	
 psmpy		pip		true	python		statistical modelling	https://pypi.org/project/psmpy/#description	propensity score matching in python	
+pyarrow		conda	conda-forge	true	python		ide	https://arrow.apache.org/docs/python/install.html	allows you to visualize polars dataframe in spyder	
+marginaleffects		pip		true	python		statistical modelling	https://pypi.org/project/marginaleffects/	let’s you plot regression lines for mixed models	
