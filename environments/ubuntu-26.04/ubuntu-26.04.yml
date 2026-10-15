@@ -35,6 +35,7 @@ dependencies:
 - templateflow
 - odfpy
 - spyder-notebook
+- pyarrow
 - pymer4
 - r-base
 - r-devtools
@@ -56,3 +57,4 @@ dependencies:
   - nimare
   - nisupply
   - psmpy
+  - marginaleffects
